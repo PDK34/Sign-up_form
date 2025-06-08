@@ -2,6 +2,35 @@ body{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    display: ;
+    display: flex;
+    margin: 0 15%;
+    background-color: black;
 }
 
+.side-image{
+    position: relative;
+
+}
+
+.side-image img{
+  width: auto;
+  height: 100vh;
+  display: block;
+  object-fit: cover;
+}
+
+.side-image footer{
+    position: absolute;
+    bottom: 0;
+    color: rgb(157, 141, 141);
+    background: rgba(36, 35, 35, 0.5);
+    width: 100%;
+    text-align: center;
+    
+}
+.right-side{
+    background-color: aliceblue;
+}
+
+.right-side form{
+}
