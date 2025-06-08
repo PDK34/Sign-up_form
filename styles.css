@@ -29,8 +29,27 @@ body{
     
 }
 .right-side{
+    padding: 10px;
     background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .right-side form{
+    display: flex;
+    gap:40px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    margin-top: 50px;
+}
+
+.right-side form div{
+    display: flex;
+    flex-direction: column;
+}
+
+form .button{
+    width: 200px;
 }
