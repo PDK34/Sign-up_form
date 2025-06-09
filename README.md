@@ -1,7 +1,5 @@
 # Sign-up-form
 
-A basic sign-up form template using only html and css. 
-
 A clean and basic **Signup Form** created using only **HTML** and **CSS**. This form includes several common input fields.
 
 ---
