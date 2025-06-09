@@ -1,3 +1,9 @@
+@font-face {
+    font-family: typewriter;
+    src: url("fonts/journal-webfont.woff") format("woff");
+    src: url("fonts/journal-webfont.woff2") format("woff2");
+}
+
 body{
     box-sizing: border-box;
     margin: 0;
@@ -6,11 +12,24 @@ body{
     margin: 0 15%;
     background-color: black;
     font-family:  monospace , serif;
+
     
 }
 
 .side-image{
     position: relative;
+
+}
+
+.side-image .overlay-image{
+  position: absolute;
+  top: 70px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 80%;
+  height: 80%;
+  opacity: 0.3; 
 
 }
 
@@ -38,6 +57,24 @@ body{
     justify-content: center;
 }
 
+.right-side > h2{
+    font-family: "typewriter";
+    font-size: 3.5em;
+    position: relative;
+}
+
+.right-side > h2::after {
+  content: "";
+  position: absolute;
+  left: -15px;
+  bottom: 16px;
+  width: 120%;
+  height: 13px;
+  background: transparent;
+  border-bottom: 4px solid #855959;
+  border-radius: 30% / 100%;
+}
+
 .right-side > p{
     font-weight: bold;
 }
@@ -46,11 +83,11 @@ body{
     gap:40px;
     flex-wrap: wrap;
     justify-content: start;
-    margin-top: 50px;
+    margin-top: 30px;
     padding-top: 30px;
     padding-left: 80px;
     font-size: 0.8em;
-    background-color: white;
+    background-color: wh;
     border-top: 1px solid #ccc;     
     border-bottom: 1px solid #ccc;    
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
