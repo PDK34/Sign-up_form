@@ -31,7 +31,6 @@ body{
     
 }
 .right-side{
-    padding: 10px;
     background-color: aliceblue;
     display: flex;
     flex-direction: column;
@@ -48,8 +47,14 @@ body{
     flex-wrap: wrap;
     justify-content: start;
     margin-top: 50px;
-    margin-left: 80px;
+    padding-top: 30px;
+    padding-left: 80px;
     font-size: 0.8em;
+    background-color: white;
+    border-top: 1px solid #ccc;     
+    border-bottom: 1px solid #ccc;    
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+
 }
 
 .right-side form div{
@@ -57,12 +62,34 @@ body{
     flex-direction: column;
 }
 
-form .button button{
+.right-side form .button button{
     width: 150px;
     height: 30px;
     border-radius: 3px;
-    background-color: rgb(63, 63, 233);
+    background-color: #596D48;
     color: white;
     font-family: monospace,sans-serif;
+    border: none;
+    cursor: pointer;
 }
 
+
+form .button button:hover{
+    background-color: #7e9767;
+}
+
+
+input{
+    border-radius: 2px;
+    border:1px solid #c5c7cb ;
+}
+
+input:focus{
+    border-color: rgb(25, 25, 255);
+    outline: none;
+
+}
+
+input:invalid{
+    border-color: red;
+}
